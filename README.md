@@ -9,10 +9,13 @@ Dùng làm đồ án cuối kỳ môn **Phát triển ứng dụng đa phương 
 https://docs.flutter.dev/release/archive
 
 ## Hướng dẫn
+## Cách 1
 ### - Sử dụng máy ảo hoặc Thiết bị vật lý (điện thoại ở chế độ developer) kết nối với máy tính
 ### - Mở terminal và thực hiện lần lượt các lệnh
   - git clone https://github.com/hungnh219/orderApp
   - flutter run
+
+## Cách 2
 ### Tải file apk và chạy
   https://drive.google.com/drive/folders/1--5Tfq5pt_xR9C366i8bqy-K7BwNbIGy?usp=sharing
 
