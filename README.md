@@ -1,5 +1,5 @@
 
-# Furniture Website (Server-Side)
+# CS526
 Ứng dụng Order
 
 Dùng làm đồ án cuối kỳ môn **Phát triển ứng dụng đa phương tiện trên thiết bị di động** - *(CS526 - UIT)*
