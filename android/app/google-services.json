@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "235663151149",
+    "project_id": "order-app-91685",
+    "storage_bucket": "order-app-91685.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235663151149:android:a754f7d8866d89914f28a4",
+        "android_client_info": {
+          "package_name": "com.project.hungapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235663151149-0sl12s9s44je2p55n7q5t95e281rv2b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKNvLPQs-9YWrjyRia4zK1Gk-M95yhXTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235663151149-0sl12s9s44je2p55n7q5t95e281rv2b3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "235663151149-daa78ufcg4g6svn7qt4npnnbc1d8cm69.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.project.socialapp.socialApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

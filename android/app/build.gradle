@@ -1,0 +1,91 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+dependencies {
+    // Import the Firebase BoM
+//    implementation platform('com.google.firebase:firebase-bom:33.4.0')
+
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+//    implementation 'com.google.firebase:firebase-analytics'
+//    implementation 'com.google.firebase:firebase-auth'
+//    implementation 'com.google.firebase:firebase-firestore'
+
+
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+}
+
+android {
+    namespace = "com.project.hungapp"
+    compileSdk = 34
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.project.hungapp"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    flavorDimensions "version"
+    // productFlavors {
+    //     mainHung {
+    //         applicationId "com.project.hungapp"
+    //     }
+    //     mainTu {
+    //         applicationId "com.project.tuapp"
+    //     }
+    // }
+
+    // sourceSets {
+    //     mainHung {
+    //         manifest.srcFile 'src/main_hung/AndroidManifest.xml'
+    //     }
+    //     mainTu {
+    //         manifest.srcFile 'src/main_tu/AndroidManifest.xml'
+    //     }
+    // }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    applicationVariants.all { variant ->
+    variant.assemble.doLast {
+        copy {
+            from '../../build/app/outputs/apk/debug/app-debug.apk'
+            into '../../build/host/outputs/apk'
+        }
+    }
+}
+}
+
+flutter {
+    source = "../.."
+}
